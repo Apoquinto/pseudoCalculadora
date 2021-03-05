@@ -29,8 +29,9 @@ class PseudoCalculadora:
                 self.evaluate()
             else:
                 print("Error, elemento no válido en las instrucciones.")
+                break
 
-        print(self._operands.getStack())
+        print("Resultado: " + str(self._operands.pop()))
         print(self._postExpression)
         self.clear()
 
